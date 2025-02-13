@@ -1,0 +1,156 @@
+
+/* Home.css */
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.home-right {
+  position: relative;
+}
+
+.bir {
+  position: absolute;
+  width: 100px;
+  left: -200px;
+  top: 500px;
+  padding: 10px 200px;
+  border-radius: 5px;
+}
+
+.ikki {
+  position: absolute;
+  width: 100px;
+  left: 40%;
+  top: 300px;
+  padding: 10px 300px;
+  border-radius: 5px;
+}
+
+.home-left {
+  background: #d3d6f6ff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  font-size: 14px;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sigin-btn {
+  background: #F25019;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sigin-btn:hover {
+  background: #0056b3;
+}
+
+.home-wrapper a {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.icons-wrapper div {
+  border-radius: 20px;
+  padding: 10px 50px;
+  background-color: #FFFF;
+}
+
+.logo {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: rgb(220, 86, 13);
+}
+
+.login {
+  font-size: 30px;
+  color: #050e17;
+  margin-bottom: 10px;
+}
+
+.home-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.icons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.icons-wrapper div {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.home-right {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .home-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .home-left {
+    width: 40%;
+  }
+
+  .home-right {
+    display: block;
+    width: 70%;
+  }
+
+  .home-right img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-left {
+    width: 100%;
+  }
+}

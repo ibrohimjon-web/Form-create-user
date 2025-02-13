@@ -1,0 +1,93 @@
+.all-users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #cc0000;
+}
+
+.all-delete-btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.all-delete-btn {
+  background: #333;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.all-delete-btn:hover {
+  background: #555;
+}
+
+/* Responsivlik */
+@media (max-width: 768px) {
+  .all-users {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 15px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}

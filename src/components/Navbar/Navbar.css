@@ -1,0 +1,56 @@
+
+
+.logo {
+  width: 200px;
+}
+
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 5%;
+}
+
+.navbar-wrapper ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar-wrapper ul .link {
+  color: #02073F;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-wrapper ul .link:hover {
+  color: #007bff;
+}
+
+.navbar-wrapper ul .active {
+  color: #FD661F;
+  font-weight: bold;
+    font-size: 16px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.now-btn {
+  background-color: #3442D9;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
