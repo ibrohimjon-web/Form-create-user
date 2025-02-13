@@ -24,10 +24,11 @@
 
 .ikki {
   position: absolute;
-  width: 100px;
+  width: -10000000px;
   left: 40%;
+  display: none;
   top: 300px;
-  padding: 10px 300px;
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -127,26 +128,48 @@ select {
 .home-right {
   display: none;
 }
+.home-wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-left {
+  width: 40%;
+}
+
+.home-right {
+  display: block;
+  width: 70%;
+}
+
+.home-right img {
+  width: 100%;
+}
 
 /* Responsive Styles */
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
   .home-wrapper {
-    flex-direction: row;
-    justify-content: space-between;
+    margin-top: 50px;
   }
-
-  .home-left {
-    width: 40%;
-  }
-
   .home-right {
-    display: block;
-    width: 70%;
+    display: none;
   }
-
-  .home-right img {
+  .home-left {
+    margin: 50px auto;
+    width: 100%;
+    max-width: 600px;
+  }
+  form {
     width: 100%;
   }
+}
+
+@media (max-width: 768px) {
+  .icons-wrapper div {
+  border-radius: 20px;
+  padding: 10px 30px;
+  
+}
 }
 
 @media (max-width: 480px) {

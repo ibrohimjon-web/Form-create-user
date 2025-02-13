@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addUser } from "../../redux/createSlice";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { RiFacebookCircleFill } from "react-icons/ri";
-import Person from "../../assets/person.png";
+import { useDispatch } from "react-redux";
 import H1 from "../../assets/h1.png";
 import H2 from "../../assets/h2.png";
+import Person from "../../assets/person.png";
+import { addUser } from "../../redux/createSlice";
 import "./Home.css";
 
 const Home = () => {
@@ -34,7 +34,6 @@ const Home = () => {
 
     dispatch(addUser(newUser));
 
-    // Maydonlarni tozalash
     setName("");
     setSurname("");
     setEmail("");
@@ -88,7 +87,7 @@ const Home = () => {
             <option value="female">Female</option>
           </select>
 
-          <button type="submit" className="sigin-btn">
+          <button type="submit" className="signin-btn">
             Sign in
           </button>
 
